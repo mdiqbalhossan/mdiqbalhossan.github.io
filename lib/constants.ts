@@ -1,4 +1,4 @@
-import { Skill, SocialLink, Project, Education } from '@/types'
+import { Skill, SocialLink, Project, Education, Experience } from '@/types'
 
 export const PERSONAL_INFO = {
   name: "Iqbal Hossen",
@@ -132,6 +132,65 @@ export const PROJECTS: Project[] = [
     githubUrl: "https://github.com/yourusername/api-microservice",
     createdAt: new Date("2023-07-01"),
     updatedAt: new Date("2023-09-01")
+  }
+]
+
+export const EXPERIENCE: Experience[] = [
+  {
+    id: "software-engineer-techcorp",
+    company: "TechCorp Solutions",
+    position: "Senior Software Engineer",
+    location: "Dhaka, Bangladesh",
+    startDate: new Date("2023-01-01"),
+    endDate: new Date("2024-12-01"),
+    description: "Led development of scalable web applications using modern technologies. Collaborated with cross-functional teams to deliver high-quality software solutions that improved user experience and business efficiency.",
+    achievements: [
+      "Developed and maintained 3 major web applications serving 10k+ users",
+      "Reduced application load time by 40% through performance optimization",
+      "Mentored 2 junior developers and conducted code reviews",
+      "Implemented CI/CD pipelines reducing deployment time by 60%",
+      "Led migration from legacy system to modern tech stack"
+    ],
+    technologies: ["React", "Node.js", "TypeScript", "MongoDB", "AWS", "Docker"],
+    type: "full-time",
+    companyUrl: "https://techcorp.com"
+  },
+  {
+    id: "frontend-developer-webstudio",
+    company: "WebStudio Agency",
+    position: "Frontend Developer",
+    location: "Remote",
+    startDate: new Date("2021-06-01"),
+    endDate: new Date("2022-12-01"),
+    description: "Specialized in creating responsive and interactive user interfaces for client projects. Worked closely with designers and backend developers to deliver pixel-perfect implementations.",
+    achievements: [
+      "Successfully delivered 15+ client projects on time and within budget",
+      "Improved website performance scores by average 35% across all projects",
+      "Implemented responsive designs for multiple device breakpoints",
+      "Collaborated with UX/UI team to enhance user experience",
+      "Established coding standards and best practices for the team"
+    ],
+    technologies: ["React", "Vue.js", "JavaScript", "CSS3", "Sass", "WordPress"],
+    type: "full-time",
+    companyUrl: "https://webstudio.com"
+  },
+  {
+    id: "freelance-developer",
+    company: "Freelance",
+    position: "Full Stack Developer",
+    location: "Remote",
+    startDate: new Date("2020-03-01"),
+    endDate: new Date("2021-05-01"),
+    description: "Provided custom web development services to small and medium businesses. Handled complete project lifecycle from requirement gathering to deployment and maintenance.",
+    achievements: [
+      "Completed 25+ freelance projects with 100% client satisfaction",
+      "Developed e-commerce solutions generating $50k+ in client revenue",
+      "Created custom CMS solutions for content management",
+      "Provided ongoing maintenance and support for client applications",
+      "Built long-term relationships with repeat clients"
+    ],
+    technologies: ["PHP", "Laravel", "MySQL", "JavaScript", "Bootstrap", "WordPress"],
+    type: "freelance"
   }
 ]
 
@@ -419,6 +478,7 @@ export const NAVIGATION_ITEMS = [
   { name: 'About', href: '#about', icon: 'User' },
   { name: 'Skills', href: '#skills', icon: 'Code' },
   { name: 'Projects', href: '#projects', icon: 'Briefcase' },
+  { name: 'Experience', href: '#experience', icon: 'Building' },
   { name: 'Education', href: '#education', icon: 'GraduationCap' },
   { name: 'Resume', href: '#resume', icon: 'FileText' },
   { name: 'Contact', href: '#contact', icon: 'Mail' },
