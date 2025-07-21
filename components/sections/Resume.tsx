@@ -70,18 +70,18 @@ export default function Resume() {
           viewport={{ once: true, amount: 0.3 }}
         >
           {/* Section Header */}
-          <motion.div variants={itemVariants} className="text-center mb-16">
-            <GradientText as="h2" className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+          <motion.div variants={itemVariants} className="text-center mb-8 sm:mb-12 lg:mb-16 px-4">
+            <GradientText as="h2" className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
               Resume & CV
             </GradientText>
-            <p className="text-text-secondary text-lg max-w-3xl mx-auto">
+            <p className="text-text-secondary text-base sm:text-lg max-w-3xl mx-auto">
               Download my latest resume or explore my professional summary, skills, and experience highlights below.
             </p>
           </motion.div>
 
-          <div className="grid lg:grid-cols-12 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8">
             {/* Resume Actions - Left Side */}
-            <div className="lg:col-span-4 space-y-6">
+            <div className="lg:col-span-4 space-y-4 sm:space-y-6 order-2 lg:order-1">
               {/* Download Card */}
               <motion.div variants={itemVariants}>
                 <Card variant="gradient" hover className="text-center">
@@ -187,7 +187,7 @@ export default function Resume() {
             </div>
 
             {/* Resume Preview - Right Side */}
-            <div className="lg:col-span-8 space-y-8">
+            <div className="lg:col-span-8 space-y-6 sm:space-y-8 order-1 lg:order-2">
               {/* Professional Summary */}
               <motion.div variants={itemVariants}>
                 <Card variant="glass" hover>
@@ -220,7 +220,7 @@ export default function Resume() {
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 sm:gap-4">
                       {topSkills.map((skill, index) => (
                         <div key={index} className="text-center">
                           <div className="text-2xl mb-2">{skill.icon}</div>
