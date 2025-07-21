@@ -207,7 +207,6 @@ export default function Skills() {
                 { label: 'Total Skills', value: stats.totalSkills, icon: Star },
                 { label: 'Expert Level', value: stats.expertSkills, icon: Award },
                 { label: 'Avg. Proficiency', value: `${stats.avgLevel}%`, icon: TrendingUp },
-                { label: 'Years Experience', value: `${stats.totalExperience}+`, icon: Zap }
               ].map((stat, index) => (
                 <motion.div
                   key={index}
