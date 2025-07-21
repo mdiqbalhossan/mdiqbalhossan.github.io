@@ -1,0 +1,1 @@
+self.__REACT_LOADABLE_MANIFEST='{"components\\\\PerformanceMonitor.tsx -> web-vitals":{"id":3761,"files":["static/chunks/vendors-aa309944f81d99b7.js"]}}';
