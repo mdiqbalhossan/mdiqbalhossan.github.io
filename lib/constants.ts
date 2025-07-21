@@ -137,62 +137,93 @@ export const PROJECTS: Project[] = [
 
 export const EXPERIENCE: Experience[] = [
   {
-    id: "software-engineer-techcorp",
-    company: "TechCorp Solutions",
-    position: "Senior Software Engineer",
+    id: "software-engineer-doorsoft",
+    company: "DOOR SOFT",
+    position: "Software Engineer",
     location: "Dhaka, Bangladesh",
-    startDate: new Date("2023-01-01"),
-    endDate: new Date("2024-12-01"),
-    description: "Led development of scalable web applications using modern technologies. Collaborated with cross-functional teams to deliver high-quality software solutions that improved user experience and business efficiency.",
+    startDate: new Date("2024-02-01"),
+    description: "Developed and maintained Manufacturing Software, School Management Software, and Support Portal Software, including SaaS-based systems.",
     achievements: [
-      "Developed and maintained 3 major web applications serving 10k+ users",
-      "Reduced application load time by 40% through performance optimization",
-      "Mentored 2 junior developers and conducted code reviews",
-      "Implemented CI/CD pipelines reducing deployment time by 60%",
-      "Led migration from legacy system to modern tech stack"
+      "Collaborated with development and testing teams to deliver high-performance client solutions",
+      "Analyzed customer requirements and implemented efficient technical solutions",
+      "Managed time effectively and consistently met deadlines",
+      "Wrote clean and maintainable code for long-term stability"
     ],
-    technologies: ["React", "Node.js", "TypeScript", "MongoDB", "AWS", "Docker"],
+    technologies: ["PHP", "Laravel", "Vue.js", "MySQL", "REST API", "Git"],
     type: "full-time",
-    companyUrl: "https://techcorp.com"
+    companyUrl: ""
   },
   {
-    id: "frontend-developer-webstudio",
-    company: "WebStudio Agency",
-    position: "Frontend Developer",
+    id: "laravel-developer-tdevs",
+    company: "TDEVS",
+    position: "Laravel Developer",
     location: "Remote",
-    startDate: new Date("2021-06-01"),
-    endDate: new Date("2022-12-01"),
-    description: "Specialized in creating responsive and interactive user interfaces for client projects. Worked closely with designers and backend developers to deliver pixel-perfect implementations.",
+    startDate: new Date("2023-12-01"),
+    endDate: new Date("2024-01-31"),
+    description: "Contributed to Banking Management Software with features like payment method integration and credit card processing.",
     achievements: [
-      "Successfully delivered 15+ client projects on time and within budget",
-      "Improved website performance scores by average 35% across all projects",
-      "Implemented responsive designs for multiple device breakpoints",
-      "Collaborated with UX/UI team to enhance user experience",
-      "Established coding standards and best practices for the team"
+      "Integrated recharge-related APIs and payment gateways",
+      "Updated legacy code to meet modern standards",
+      "Participated in code reviews to uphold code quality"
     ],
-    technologies: ["React", "Vue.js", "JavaScript", "CSS3", "Sass", "WordPress"],
+    technologies: ["Laravel", "PHP", "REST API", "MySQL"],
     type: "full-time",
-    companyUrl: "https://webstudio.com"
+    companyUrl: ""
   },
   {
-    id: "freelance-developer",
-    company: "Freelance",
-    position: "Full Stack Developer",
+    id: "web-developer-aso",
+    company: "ASO",
+    position: "Web Developer",
     location: "Remote",
-    startDate: new Date("2020-03-01"),
-    endDate: new Date("2021-05-01"),
-    description: "Provided custom web development services to small and medium businesses. Handled complete project lifecycle from requirement gathering to deployment and maintenance.",
+    startDate: new Date("2023-05-01"),
+    endDate: new Date("2024-01-31"),
+    description: "Built and maintained client websites with custom web applications, ensuring responsive design and enhanced performance.",
     achievements: [
-      "Completed 25+ freelance projects with 100% client satisfaction",
-      "Developed e-commerce solutions generating $50k+ in client revenue",
-      "Created custom CMS solutions for content management",
-      "Provided ongoing maintenance and support for client applications",
-      "Built long-term relationships with repeat clients"
+      "Coded websites using HTML, CSS, JavaScript, and jQuery",
+      "Implemented responsive design for improved UX",
+      "Converted mockups into interactive web solutions",
+      "Used AJAX and JSON for dynamic frontend interaction"
     ],
-    technologies: ["PHP", "Laravel", "MySQL", "JavaScript", "Bootstrap", "WordPress"],
-    type: "freelance"
+    technologies: ["HTML", "CSS", "JavaScript", "jQuery", "AJAX", "JSON"],
+    type: "part-time",
+    companyUrl: ""
+  },
+  {
+    id: "php-laravel-developer-islamiyatech",
+    company: "ISLAMIYA TECH",
+    position: "PHP Laravel Developer",
+    location: "Remote",
+    startDate: new Date("2023-04-01"),
+    endDate: new Date("2023-09-30"),
+    description: "Worked with cross-functional teams to implement new features and maintain code quality in a dynamic development environment.",
+    achievements: [
+      "Enhanced team productivity by quickly adapting to new technologies",
+      "Fixed complex bugs ensuring a stable release",
+      "Collaborated with teams for seamless feature integration"
+    ],
+    technologies: ["Laravel", "PHP", "MySQL"],
+    type: "contract",
+    companyUrl: ""
+  },
+  {
+    id: "backend-developer-rbftechzone",
+    company: "RBF TECH ZONE",
+    position: "Backend Developer",
+    location: "Remote",
+    startDate: new Date("2023-02-01"),
+    endDate: new Date("2023-04-30"),
+    description: "Focused on backend efficiency, including API development and third-party integrations.",
+    achievements: [
+      "Developed RESTful APIs for distributed systems",
+      "Integrated third-party APIs into web platforms",
+      "Managed efficient SQL queries and data processing"
+    ],
+    technologies: ["PHP", "REST API", "SQL", "Laravel"],
+    type: "part-time",
+    companyUrl: ""
   }
-]
+];
+
 
 export const EDUCATION: Education[] = [
   {

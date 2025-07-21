@@ -48,7 +48,7 @@ export interface Experience {
   description: string
   achievements: string[]
   technologies: string[]
-  type: 'full-time' | 'part-time' | 'contract' | 'internship' | 'freelance'
+  type: 'full-time' | 'part-time' | 'contract' | 'internship' | 'freelance' ,
   companyUrl?: string
   companyLogo?: string
 }
