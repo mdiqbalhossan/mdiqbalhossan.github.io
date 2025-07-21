@@ -1,102 +1,10 @@
 'use client'
 
 
-// Temporary hardcoded data for testing - using actual data from constants
-const TEST_PROJECTS = [
-  {
-    id: "ecommerce-platform",
-    title: "E-Commerce Platform",
-    description: "A full-stack e-commerce platform built with Next.js, featuring user authentication, payment integration, and admin dashboard.",
-    longDescription: "This comprehensive e-commerce platform showcases modern web development practices with a focus on user experience and performance. The project includes features like product catalog, shopping cart, secure checkout, order management, and administrative tools.",
-    image: "/images/projects/placeholder.svg",
-    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Stripe", "MongoDB", "NextAuth.js"],
-    category: "web" as const,
-    status: "completed" as const,
-    featured: true,
-    githubUrl: "https://github.com/yourusername/ecommerce-platform",
-    liveUrl: "https://ecommerce-demo.vercel.app",
-    createdAt: new Date("2023-09-01"),
-    updatedAt: new Date("2023-11-15")
-  },
-  {
-    id: "task-management-app",
-    title: "Task Management App",
-    description: "A collaborative task management application with real-time updates, team collaboration, and project tracking features.",
-    longDescription: "Built with React and Node.js, this application demonstrates real-time communication using Socket.io, state management with Redux, and responsive design principles.",
-    image: "/images/projects/placeholder.svg",
-    technologies: ["React", "Node.js", "Socket.io", "PostgreSQL", "Redux", "Material-UI"],
-    category: "web" as const,
-    status: "completed" as const,
-    featured: true,
-    githubUrl: "https://github.com/yourusername/task-manager",
-    liveUrl: "https://taskmanager-demo.herokuapp.com",
-    demoUrl: "https://www.youtube.com/watch?v=demo",
-    createdAt: new Date("2023-06-01"),
-    updatedAt: new Date("2023-08-30")
-  },
-  {
-    id: "portfolio-website",
-    title: "Personal Portfolio",
-    description: "A modern, responsive portfolio website showcasing my projects and skills with dark theme and smooth animations.",
-    longDescription: "This portfolio website features a modern design with dark theme, particle animations, smooth scrolling, and optimized performance. Built with Next.js 14 and modern web technologies.",
-    image: "/images/projects/placeholder.svg",
-    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "tsParticles"],
-    category: "web" as const,
-    status: "completed" as const,
-    featured: false,
-    githubUrl: "https://github.com/yourusername/portfolio",
-    liveUrl: "https://yourname.dev",
-    createdAt: new Date("2023-12-01"),
-    updatedAt: new Date("2024-01-15")
-  },
-  {
-    id: "weather-app",
-    title: "Weather Dashboard",
-    description: "A responsive weather application with location-based forecasts, interactive maps, and weather alerts.",
-    longDescription: "Features include current weather conditions, 7-day forecasts, weather maps, and severe weather alerts. Integrates with multiple weather APIs for accurate data.",
-    image: "/images/projects/placeholder.svg",
-    technologies: ["React", "JavaScript", "OpenWeather API", "Chart.js", "CSS3"],
-    category: "web" as const,
-    status: "completed" as const,
-    featured: false,
-    githubUrl: "https://github.com/yourusername/weather-app",
-    liveUrl: "https://weather-dashboard-demo.netlify.app",
-    createdAt: new Date("2023-04-01"),
-    updatedAt: new Date("2023-05-15")
-  },
-  {
-    id: "mobile-expense-tracker",
-    title: "Mobile Expense Tracker",
-    description: "A React Native mobile application for tracking personal expenses with categorization and analytics.",
-    longDescription: "Cross-platform mobile app with features like expense categorization, budget tracking, financial analytics, and data visualization. Includes offline capability and data synchronization.",
-    image: "/images/projects/placeholder.svg",
-    technologies: ["React Native", "Firebase", "Expo", "AsyncStorage", "React Navigation"],
-    category: "mobile" as const,
-    status: "in-progress" as const,
-    featured: true,
-    githubUrl: "https://github.com/yourusername/expense-tracker",
-    createdAt: new Date("2023-10-01"),
-    updatedAt: new Date("2024-01-01")
-  },
-  {
-    id: "api-microservice",
-    title: "RESTful API Microservice",
-    description: "A scalable Node.js microservice with authentication, rate limiting, and comprehensive documentation.",
-    longDescription: "Built following microservices architecture principles with proper error handling, logging, testing, and documentation. Includes JWT authentication, Redis caching, and API versioning.",
-    image: "/images/projects/placeholder.svg",
-    technologies: ["Node.js", "Express", "MongoDB", "Redis", "JWT", "Swagger"],
-    category: "other" as const,
-    status: "completed" as const,
-    featured: false,
-    githubUrl: "https://github.com/yourusername/api-microservice",
-    createdAt: new Date("2023-07-01"),
-    updatedAt: new Date("2023-09-01")
-  }
-]
+import { PROJECTS } from '@/lib/constants'  
 
 export default function Projects() {
-  // Using test data temporarily to fix empty sections
-  const PROJECTS_TO_USE = TEST_PROJECTS
+  const PROJECTS_TO_USE = PROJECTS
   
   console.log('Using test projects data, count:', PROJECTS_TO_USE.length)
 
