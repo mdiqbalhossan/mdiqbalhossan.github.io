@@ -22,31 +22,20 @@ export default function Skills() {
   const [hoveredSkill, setHoveredSkill] = useState<string | null>(null)
   const [viewMode, setViewMode] = useState<'grid' | 'chart' | 'compact'>('grid')
   const [isVisible, setIsVisible] = useState(false)
-  const controls = useAnimation()
   const ref = useRef<HTMLDivElement>(null)
   const inView = useInView(ref, { amount: 0.1 })
 
-  useEffect(() => {
-    if (inView) {
-      setIsVisible(true)
-      controls.start('visible')
-    }
-  }, [inView, controls])
 
   // Enhanced animation variants
   const containerVariants = {
     hidden: { 
       opacity: 0,
-      y: 50
     },
     visible: {
       opacity: 1,
-      y: 0,
       transition: {
-        duration: 0.8,
-        ease: "easeOut",
-        delayChildren: 0.2,
-        staggerChildren: 0.1
+        delayChildren: 0.3,
+        staggerChildren: 0.2
       }
     }
   }
@@ -158,8 +147,6 @@ export default function Skills() {
       <div className="container-custom">
         <motion.div
           variants={containerVariants}
-          initial="hidden"
-          animate={controls}
           className="relative"
         >
           {/* Animated Background Elements */}

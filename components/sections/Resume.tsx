@@ -65,9 +65,7 @@ export default function Resume() {
       <div className="container-custom">
         <motion.div
           variants={containerVariants}
-          initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: 0.3 }}
         >
           {/* Section Header */}
           <motion.div variants={itemVariants} className="text-center mb-8 sm:mb-12 lg:mb-16 px-4">
