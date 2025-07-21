@@ -11,7 +11,7 @@ interface LazyImageProps {
   height?: number
   fill?: boolean
   className?: string
-  placeholder?: string
+  placeholder?: 'blur' | 'empty'
   blurDataURL?: string
   priority?: boolean
   onLoad?: () => void
